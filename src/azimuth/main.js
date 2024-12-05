@@ -155,7 +155,7 @@ function handleVersionList(r) {
     let newVersions = [];
     let markNextAsNew = false;
 
-    let versions = r.antenna || r.versions;
+    let versions = r[window.config.type];
     let sortedVersions = versions.map(a => a.v.split('.').map(n => +n + 100000).join('.')).sort()
         .map(a => a.split('.').map(n => +n - 100000).join('.'));
 
