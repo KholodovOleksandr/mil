@@ -102,7 +102,7 @@ function handleCalculate(e) {
 
     let alphaAInMinutes = alphaA * 3.6;
 
-    if (window.config.type === 'anthena') {
+    if (window.config.type === 'antenna') {
         let alphaAInGraduses = alphaAInMinutes / 60;
         document.getElementById('alphaAInGraduses').innerText = alphaAInGraduses.toFixed(1);
     }
@@ -142,7 +142,7 @@ async function download(e) {
 }
 
 function checkNewVersion() {
-    fetch(baseUrl + 'contents/versions.json')
+    fetch('https://api.github.com/repos/KholodovOleksandr/contents/versions.json')
         .then(resp => resp.json()
             .then(j => fetch(j.download_url)
                 .then(r => r.json()
@@ -155,7 +155,7 @@ function handleVersionList(r) {
     let newVersions = [];
     let markNextAsNew = false;
 
-    let versions = r.antena || r.versions;
+    let versions = r.antenna || r.versions;
     let sortedVersions = versions.map(a => a.v.split('.').map(n => +n + 100000).join('.')).sort()
         .map(a => a.split('.').map(n => +n - 100000).join('.'));
 

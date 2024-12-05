@@ -30,7 +30,7 @@ To build the resulting pages, execute the following commands:
 
 #### Спосіб 2
 1. Завантажте [Offline Browser](https://play.google.com/store/apps/details?id=it.nikodroid.offline&hl=en) з Google Play.  
-2. Натисніть кнопку "+", у полі Link додайте посилання: https://kholodovoleksandr.github.io/mil/anthena.html, а в полі Title введіть назву (будь-яку зручну).
+2. Натисніть кнопку "+", у полі Link додайте посилання: https://kholodovoleksandr.github.io/mil/antenna.html, а в полі Title введіть назву (будь-яку зручну).
 3. Переконайтеся, що галочка Enable JavaScript увімкнена, і натисніть Download.
 
 Після цього сторінка стане доступною для перегляду всередині цього застосунку.

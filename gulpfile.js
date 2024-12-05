@@ -6,7 +6,7 @@ const merge = require('merge-stream');
 const inlineSource = require('gulp-inline-source');
 
 const folders = [
-    { folder: 'azimuth/anthena', output: 'anthena.html' },
+    { folder: 'azimuth/antenna', output: 'antenna.html' },
     { folder: 'azimuth/angle', output: 'angle.html' }
 ];
 
