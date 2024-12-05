@@ -26,8 +26,8 @@ gulp.task('default', function () {
     streams.push(gulp.src('src/index.html')
         .pipe(gulp.dest('docs')));
 
-    streams.push(gulp.src('src/favicon.ico')
-        .pipe(gulp.dest('docs')));
+    // streams.push(gulp.src('src/favicon.ico')
+    //     .pipe(gulp.dest('docs')));
 
     return merge(...streams);
 });

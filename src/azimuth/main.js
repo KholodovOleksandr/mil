@@ -142,7 +142,7 @@ async function download(e) {
 }
 
 function checkNewVersion() {
-    fetch('https://api.github.com/repos/KholodovOleksandr/contents/versions.json')
+    fetch('https://api.github.com/repos/KholodovOleksandr/mil/contents/versions.json')
         .then(resp => resp.json()
             .then(j => fetch(j.download_url)
                 .then(r => r.json()
