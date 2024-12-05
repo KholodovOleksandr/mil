@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    @@include('header.html')
+    <link rel="stylesheet" href="styles.css" inline>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="loading-state d-n">
+            <div class="loading"></div>
+        </div>
+        <div class="content">
+            @@include('../measurement.html')
+            @@include('../data.html')
+
+            @@include('result.html')
+
+        </div>
+        @@include('../footer.html')
+    </div>
+    <div id="mypopover" popover="manual" class="popover">
+        <div class="popover-header">
+            <span class="popover-title">Доступна нова версія</span>
+            <button class="popover-close" popovertarget="mypopover">×</button>
+        </div>
+        <ul class="popover-content">
+        </ul>
+    </div>
+    <script src="constants.js" inline></script>
+    @@include('scripts.html')
+    <script src="main.js" inline></script>
+
+</html>

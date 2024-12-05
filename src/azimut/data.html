@@ -1,0 +1,56 @@
+<div class="row">
+    <span>Поточний рік</span>
+    <input type="number" name="currentYear" id="currentYear" class="s" min="1900" max="2100" required />
+    <span class="error">Допустимі значення від 1900 до 2100</span>
+</div>
+<div class="row jc-sb">
+    <div>
+        <span>Схилення на </span>
+        <input type="number" name="year" id="year" class="s" min="1900" max="2100" required />
+        <span>рік</span>
+    </div>
+    <div class="toggle-buttons">
+        <input type="radio" id="directionWest" name="direction" value="west">
+        <label for="directionWest">Зах.</label>
+
+        <input type="radio" id="directionEast" name="direction" value="east" checked>
+        <label for="directionEast">Сх.</label>
+    </div>
+    <span class="error">Допустимі значення від 1900 до 2100</span>
+</div>
+<div class="row jc-sb">
+    <div>
+        <input type="number" name="gradus" id="gradus" class="x-s" min="0" max="359" required />
+        <span>градусів</span>
+        <span class="error error-absolute">Допустимі значення 0 - 359</span>
+    </div>
+    <div>
+        <input type="number" name="minuta" id="minuta" class="x-s" min="0" max="59" required />
+        <span>хвилин</span>
+        <span class="error error-absolute m-l-xl">Допустимі значення 0 - 59</span>
+    </div>
+</div>
+
+<div class="row jc-sb">
+    <span>Річна зміна схиення</span>
+
+    <div class="toggle-buttons">
+        <input type="radio" id="yearlyDirectionWest" name="yearlyDirection" value="west">
+        <label for="yearlyDirectionWest">Зах.</label>
+
+        <input type="radio" id="yearlyDirectionEast" name="yearlyDirection" value="east" checked>
+        <label for="yearlyDirectionEast">Сх.</label>
+    </div>
+</div>
+<div class="row jc-sb">
+    <div>
+        <input type="number" name="yearlyGradus" id="yearlyGradus" class="x-s" min="0" max="359" required />
+        <span>градусів</span>
+        <span class="error error-absolute">Допустимі значення 0 - 359</span>
+    </div>
+    <div>
+        <input type="number" name="yearlyMinuta" id="yearlyMinuta" class="x-s" min="0" max="59" required />
+        <span>хвилин</span>
+        <span class="error error-absolute m-l-xl">Допустимі значення 0 - 59</span>
+    </div>
+</div>
