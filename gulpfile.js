@@ -6,15 +6,15 @@ const merge = require('merge-stream');
 const inlineSource = require('gulp-inline-source');
 
 const folders = [
-    { folder: 'azimut/anthena', output: 'anthena.html' },
-    { folder: 'azimut/angle', output: 'angle.html' }
+    { folder: 'azimuth/anthena', output: 'anthena.html' },
+    { folder: 'azimuth/angle', output: 'angle.html' }
 ];
 
 gulp.task('default', function () {
 
     const streams = folders.map(config => {
-        return gulp.src('src/azimut/calc.html')
-            .pipe(inlineSource({ rootpath: 'src/azimut' }))
+        return gulp.src('src/azimuth/calc.html')
+            .pipe(inlineSource({ rootpath: 'src/azimuth' }))
             .pipe(fileInclude({
                 prefix: '@@',
                 basepath: path.join('src', config.folder)
